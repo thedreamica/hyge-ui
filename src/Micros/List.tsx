@@ -3,8 +3,11 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 
+interface ButtonMicroProps {
+    contents: [];
+  }
 
-export default function AlignItemsList({ contents }: any) {
+const ListMicro: React.FC<ButtonMicroProps> = ({ contents }) => {
     return (
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
             {contents.map((content: any, key: any) => {
@@ -19,3 +22,5 @@ export default function AlignItemsList({ contents }: any) {
         </List>
     );
 }
+
+export default ListMicro

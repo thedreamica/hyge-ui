@@ -2,8 +2,15 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 
-const CardMicro: any = ({ width, hight, imgUrl, altText }: any) => {
-  console.log('this si', imgUrl)
+interface CardMicroProps {
+  width: number;
+  hight: number;
+  imgUrl: string;
+  altText: string;
+}
+
+const CardMicro:  React.FC<CardMicroProps> = ({ width, hight, imgUrl, altText }) => {
+
   return (
     <Card >
       <CardMedia
@@ -12,7 +19,6 @@ const CardMicro: any = ({ width, hight, imgUrl, altText }: any) => {
         image={imgUrl}
         alt={altText}
       />
-
     </Card>
   );
 }
