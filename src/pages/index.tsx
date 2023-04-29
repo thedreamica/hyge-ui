@@ -2,6 +2,7 @@ import Typography from "../Micros/Typography"
 import Button from "../Micros/Button"
 import Card from "../Micros/Card"
 import Modal from "@/Micros/Modal"
+import  List  from "../Micros/List"
 
 // this whole code needs to be removed after the code review
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
         hight={50}
         width={100}
         altText={'alt text'} />
+        <List contents={['this is text1', 'this istext 3']}/>
 
       <Modal />
     </>
