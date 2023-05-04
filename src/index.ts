@@ -1,3 +1,1 @@
-import { Num } from './Num'
-
-export { Num }
+export * as Button from './button'

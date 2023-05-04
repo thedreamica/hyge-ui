@@ -27,7 +27,8 @@
   "author": "Ram prasanth <ramprash.rspx@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@mui/base": "^5.0.0-alpha.127"
+    "@mui/base": "^5.0.0-alpha.127",
+    "@mui/system": "^5.12.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
